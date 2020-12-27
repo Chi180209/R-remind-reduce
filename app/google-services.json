@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1092060993261",
+    "firebase_url": "https://ccmcteam-da4c2.firebaseio.com",
+    "project_id": "ccmcteam-da4c2",
+    "storage_bucket": "ccmcteam-da4c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092060993261:android:35997055dd6f25d3851ee4",
+        "android_client_info": {
+          "package_name": "com.ccmcteam.ccmcteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092060993261-cnu77jq6j4i7knfnq1k7dnkkjo7rg5dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ccmcteam.ccmcteam",
+            "certificate_hash": "51f7eb4e8f3febd6f7e557224a3545298d83de1f"
+          }
+        },
+        {
+          "client_id": "1092060993261-uno1b39f8816pflqi2vs9laksv1rgc73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmU7O5L-fEvJTrlly6IWTjK1BK_ASN2VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092060993261-uno1b39f8816pflqi2vs9laksv1rgc73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

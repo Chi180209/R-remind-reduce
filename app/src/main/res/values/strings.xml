@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">CCMC</string>
+    <string name="teamname">CCMC VNC TEAM</string>
+    <string name="appversion">1.0.0 version</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+
+    <string name="nav_header_title">Nguyễn Tuấn Vũ</string>
+    <string name="nav_header_subtitle">健康状態：普通</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_suckhoe">Health Status</string>
+    <string name="menu_menu">Recipes</string>
+    <string name="menu_nguyenlieu">Ingredients</string>
+    <string name="menu_thongbao">Notifications</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_about">About us</string>
+
+
+    <string name="search">Search</string>
+
+    <!--    intro text-->
+
+    <string name="next">Next</string>
+    <string name="getStarted">Get Started</string>
+
+    <!--   communicate popup strings-->
+
+    <string name="question">Delete this notification？</string>
+    <string name="yes">Delete</string>
+    <string name="no">Update</string>
+
+    <!--    user infomation -->
+
+    <string name="username">User Name</string>
+    <string name="gmail">Gmail</string>
+    <string name="pass">Password</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="save">Save</string>
+    <string name="skip">Skip</string>
+    <string name="update">Update</string>
+
+    <!--    about -->
+
+    <string name="coppyringht">Coppyright by CCMC TEAM </string>
+    <string name="school">中央情報専門学校</string>
+    <string name="Class">IT-WEB学科</string>
+
+    <!--  bar add activity  -->
+    <string name="add_recipe">New Recipe</string>
+    <string name="add_ingredient">New Ingredient</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="ingredient_name">Ingredient name</string>
+
+    <string name="cook_time">Cooking Time</string>
+
+    <string name="category">Category</string>
+    <string name="exp">yyyy-MM-dd</string>
+    <string name="ingredient_weight">Weight</string>
+
+    <!--    login activity string-->
+    <string name="wellcome">Wellcome to CCMC</string>
+    <string name="decription">健康、食材、レシピを管理するアプリケーション</string>
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">Logout</string>
+    <!--    BMI -->
+    <string name="setInfoPlease">ユーザー情報を設定して下さい。</string>
+    <string name="mail">Mail</string>
+    <string name="cancel">CANCEL</string>
+    <string name="expired_day">Expired day：</string>
+    <string name="in_stock">In stock</string>
+
+    <!-- FBRecipe categories -->
+    <array name="RecipeCategories">
+        <item>Rice</item>
+        <item>Soup</item>
+        <item>Salad</item>
+        <item>Dessert</item>
+        <item>Drink</item>
+        <item>Others</item>
+    </array>
+
+
+</resources>

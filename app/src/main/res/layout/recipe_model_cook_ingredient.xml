@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Ingredient name"
+        android:textSize="20dp"
+        android:layout_gravity="start"
+        android:textColor="@color/textOnPrimary"
+        android:textAlignment="textStart"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20dp"
+        android:textColor="@color/textOnPrimary"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/ingredient_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="amount"
+        android:textSize="20dp"
+        android:textColor="@color/textOnPrimary"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/ingredient_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textOnPrimary"
+        android:text="unit"
+        android:textSize="20dp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

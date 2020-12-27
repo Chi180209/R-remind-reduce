@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <ImageView
+                android:id="@+id/circleImage"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ing_momoniku" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/ing_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Momo niku"
+            app:layout_constraintBottom_toTopOf="@+id/exp_date"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/exp_name"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/expired_day"
+            android:textColor="@color/textOnPrimary"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/ing_name" />
+
+        <TextView
+            android:id="@+id/exp_date"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:text="2020/03/30"
+            android:textColor="@color/textOnPrimary"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/ing_name" />
+
+        <Button
+            android:id="@+id/arrowBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_arrow_down_black"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/expandableView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exp_date">
+
+            <ImageView
+                android:id="@+id/groupIngredientIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_group_ingredient"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/group_ingredient_detail"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:text="鶏肉"
+                android:textColor="@color/textOnPrimary"
+                app:layout_constraintStart_toEndOf="@id/groupIngredientIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/groupIngredientName"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/category"
+                android:textColor="@color/textOnPrimary"
+                app:layout_constraintStart_toEndOf="@id/groupIngredientIcon"
+                app:layout_constraintTop_toBottomOf="@+id/group_ingredient_detail" />
+
+            <ImageView
+                android:id="@+id/ingredient_storage_Icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_storage_ingredient"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/groupIngredientIcon" />
+
+            <TextView
+                android:id="@+id/ingredient_storage_amount"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:text="500"
+                android:textColor="@color/textOnPrimary"
+                app:layout_constraintStart_toEndOf="@+id/ingredient_storage_Icon"
+                app:layout_constraintTop_toBottomOf="@+id/groupIngredientName" />
+
+            <TextView
+                android:id="@+id/ingredient_storage_unit"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="18dp"
+                android:text="g"
+
+                android:textColor="@color/textOnPrimary"
+                app:layout_constraintStart_toEndOf="@+id/ingredient_storage_amount"
+                app:layout_constraintTop_toBottomOf="@+id/groupIngredientName" />
+
+            <TextView
+                android:id="@+id/ingredient_storage_name"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/in_stock"
+                android:textColor="@color/textOnPrimary"
+                app:layout_constraintStart_toEndOf="@id/ingredient_storage_Icon"
+                app:layout_constraintTop_toBottomOf="@+id/ingredient_storage_amount" />
+
+            <TextView
+                android:id="@+id/ingredient_status_decription1"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:text=""
+                android:textColor="@color/textOnPrimary"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/ingredient_storage_Icon"
+                app:layout_constraintTop_toBottomOf="@+id/ingredient_storage_name" />
+
+            <TextView
+                android:id="@+id/ingredient_status_date"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="5"
+                android:textColor="@color/textOnPrimary"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/ingredient_status_decription1"
+                app:layout_constraintStart_toEndOf="@+id/ingredient_status_decription1" />
+
+            <TextView
+                android:id="@+id/exp_ura"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="day(s) left."
+                android:textColor="@color/textOnPrimary"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/ingredient_status_date"
+                app:layout_constraintStart_toEndOf="@+id/ingredient_status_date" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+

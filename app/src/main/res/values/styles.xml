@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!-- your custom style -->
+    <style name="hacksmileCustomHomeButton" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/textOnPrimary</item>
+    </style>
+
+    <!-- then, add your custom style in the main theme style -->
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/textOnPrimary</item>
+        <item name="drawerArrowStyle">@style/hacksmileCustomHomeButton</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/textOnPrimary</item>
+        <item name="colorButtonNormal">#000000</item>
+
+    </style>
+
+</resources>
